@@ -2,6 +2,8 @@ require('./config/config');
 const mongoose = require('mongoose');
 const express = require('express');
 let app = express();
+const cors = require('cors');
+app.use(cors());
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 app.use(require('./routes/district'));
