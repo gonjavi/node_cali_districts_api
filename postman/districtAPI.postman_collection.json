@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "74ca6ddb-bef8-4c44-8e9b-44772c4ab02c",
+		"name": "districtAPI",
+		"description": "districtAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post: crear un barrio - district",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"El refugio\",\n    \"comuna\": \"11\",\n    \"description\": \"\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/districts",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"districts"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				},
+				"description": "post: crear un barrio - district"
+			},
+			"response": []
+		},
+		{
+			"name": "get: obtener los barrios - get the districts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/districts",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"districts"
+					]
+				},
+				"description": "get: obtener los barrios - get the districts"
+			},
+			"response": []
+		},
+		{
+			"name": "get: obtener un barrio - get a district",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/district/605a3e323f72a094f029dba2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"district",
+						"605a3e323f72a094f029dba2"
+					]
+				},
+				"description": "get: obtener un barrio - get a district"
+			},
+			"response": []
+		},
+		{
+			"name": "delete: borrar un barrio - delete a district",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/district/605a3e323f72a094f029dba2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"district",
+						"605a3e323f72a094f029dba2"
+					]
+				},
+				"description": "delete: borrar un barrio - delete a district"
+			},
+			"response": []
+		},
+		{
+			"name": "put: actualizar un barrio - update a district",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"villa del sur\",\n    \"comuna\": \"11\",\n    \"description\": \"sur de cali\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/district/605a3e2b3f72a094f029dba2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"district",
+						"605a3e2b3f72a094f029dba2"
+					]
+				},
+				"description": "put: actualizar un barrio - update a district"
+			},
+			"response": []
+		}
+	]
+}
